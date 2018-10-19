@@ -1,0 +1,6 @@
+export TF_DOCKER_BUILD_TYPE=GPU
+export TF_DOCKER_BUILD_IS_DEVEL=yes
+export TF_DOCKER_BUILD_ORIG_DOCKERFILE=DockerfileUbuntu${UBUNTU_VERSION}_CUDA10
+export TF_DOCKER_BUILD_DEVEL_BRANCH=v1.11.0-rc2
+export TF_DOCKER_BUILD_IMAGE_NAME=tensorflow-cuda10-${UBUNTU_VERSION}
+./parameterized_docker_build.sh
